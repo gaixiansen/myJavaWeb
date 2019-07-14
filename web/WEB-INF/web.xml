@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <display-name>Archetype Created Web Application</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>servletDemo1</servlet-name>
+        <servlet-class>com.github.Servlet_demo1</servlet-class>
+        <!-- 访问servlet的时候启动该服务，数字越大，启动顺序越靠后-->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <!-- 给Servlet提供（映射）一个可供客户端访问的URI -->
+    <servlet-mapping>
+        <servlet-name>servletDemo1</servlet-name>
+        <url-pattern>/demo1</url-pattern>
+    </servlet-mapping>
+</web-app>
