@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <script type="text/javascript">
+        function changeCode() {
+            var tag = document.getElementsByTagName("img")[0];
+            tag.src = "/servletHttpDemo_war_exploded/demo4?time=" + new Date().getTime()
+        }
+
+    </script>
+</head>
+<body>
+    <form action="get">
+        用户名: <input type="text" name="userName"><br>
+        密码: <input type="password" name="pwd"><br>
+        验证码: <input type="text" name="code"> <img src="/servletHttpDemo_war_exploded/demo4" alt="">
+<!--        src中的url可以作为一个单独的resquest请求-- ，之所以写成此路径，
+是因为Servlet_demo4_VerificationCode这个类的get方法中会向浏览器发送验证码，我们在此处用的是浏览器中显示的验证码-->
+        <a href="javascript:changeCode()">看不清换一张</a><br>
+        <input type="submit" value="登录"/><br>
+    </form>
+</body>
+</html>

@@ -19,4 +19,20 @@
         <servlet-name>s2</servlet-name>
         <url-pattern>/demo2</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>s3</servlet-name>
+        <servlet-class>com.github.servlet.Servlet_demo3_picture_download</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s3</servlet-name>
+        <url-pattern>/demo3</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>s4</servlet-name>
+        <servlet-class>com.github.servlet.Servlet_demo4_VerificationCode</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s4</servlet-name>
+        <url-pattern>/demo4</url-pattern>
+    </servlet-mapping>
 </web-app>
