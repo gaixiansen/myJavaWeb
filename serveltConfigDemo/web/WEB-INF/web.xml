@@ -10,6 +10,10 @@
     <servlet>
         <servlet-name>servletDemo1</servlet-name>
         <servlet-class>com.github.Servlet_demo1</servlet-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>GBK</param-value>
+        </init-param>
         <!-- 访问servlet的时候启动该服务，数字越大，启动顺序越靠后-->
         <load-on-startup>1</load-on-startup>
     </servlet>
