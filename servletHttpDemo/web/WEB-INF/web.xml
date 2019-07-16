@@ -35,4 +35,36 @@
         <servlet-name>s4</servlet-name>
         <url-pattern>/demo4</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>s5</servlet-name>
+        <servlet-class>com.github.servlet.Servlet_demo5_refresh</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s5</servlet-name>
+        <url-pattern>/demo5</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>s6</servlet-name>
+        <servlet-class>com.github.servlet.Servlet_demo6</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s6</servlet-name>
+        <url-pattern>/demo6</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>s7</servlet-name>
+        <servlet-class>com.github.servlet.Servlet_demo7_redirect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s7</servlet-name>
+        <url-pattern>/demo7</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>s8</servlet-name>
+        <servlet-class>com.github.servlet.Servlet_demo8_request1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s8</servlet-name>
+        <url-pattern>/demo8</url-pattern>
+    </servlet-mapping>
 </web-app>
