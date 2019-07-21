@@ -4,6 +4,7 @@ import com.github.servlet.entity.User;
 import org.apache.commons.beanutils.BeanUtils;
 
 import javax.servlet.ServletException;
+import javax.servlet.ServletInputStream;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -30,7 +31,15 @@ public class Servlet_demo3_getFormData extends HttpServlet {
 //        test1(request);
 //        test2(request);
 //        test3(request);
-        test4(request);
+//        test4(request);
+        ServletInputStream sis = request.getInputStream();
+        int len = 0;
+        byte[] b = new byte[1024];
+        while ((len=sis.read(b)) != -1){
+            System.out.println();
+        }
+
+
     }
 
     /**
