@@ -43,4 +43,20 @@
         <servlet-name>s5</servlet-name>
         <url-pattern>/dologin</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>s6</servlet-name>
+        <servlet-class>com.github.servlet.history.ServletShowAllBookList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s6</servlet-name>
+        <url-pattern>/showBookList</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>s7</servlet-name>
+        <servlet-class>com.github.servlet.history.ServletShowBookDetail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s7</servlet-name>
+        <url-pattern>/showBookDetail</url-pattern>
+    </servlet-mapping>
 </web-app>
