@@ -59,4 +59,28 @@
         <servlet-name>s7</servlet-name>
         <url-pattern>/showBookDetail</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>s8</servlet-name>
+        <servlet-class>com.github.servlet.cart.Servlet_showAllBookList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s8</servlet-name>
+        <url-pattern>/showBook</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>s9</servlet-name>
+        <servlet-class>com.github.servlet.cart.Servlet_showCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s9</servlet-name>
+        <url-pattern>/showCart</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>s10</servlet-name>
+        <servlet-class>com.github.servlet.cart.Servlet_addCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s10</servlet-name>
+        <url-pattern>/addCart</url-pattern>
+    </servlet-mapping>
 </web-app>
